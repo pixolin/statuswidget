@@ -33,18 +33,16 @@
 		"oAP": "\/admin\/widget-class.php",
 		"oF": 0
 		},
-	"\/bower.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/bower-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
 	"\/frontendselector.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/frontendselector.php",
+		"oF": 0
+		},
+	"\/inc\/activation-class.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/activation-class.php",
 		"oF": 0
 		},
 	"\/inc\/cookie-class.php": {
@@ -59,20 +57,20 @@
 		"oAP": "\/inc\/enqueue-class.php",
 		"oF": 0
 		},
+	"\/inc\/js\/cookie.js": {
+		"ft": 64,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "\/inc\/js\/min\/cookie-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/inc\/js\/frontendselector.js": {
 		"ft": 64,
 		"mi": 0,
 		"oA": 1,
 		"oAP": "\/inc\/js\/min\/frontendselector-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/inc\/js\/jquery.cookie.js": {
-		"ft": 64,
-		"mi": 0,
-		"oA": 2,
-		"oAP": "\/inc\/js\/min\/jquery.cookie-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -83,16 +81,22 @@
 		"oAP": "\/inc\/selector-class.php",
 		"oF": 0
 		},
-	"\/inc\/style-class.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/style-class.php",
-		"oF": 0
-		},
 	"\/LICENSE": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
+		"oF": 0
+		},
+	"\/loader-class.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/loader-class.php",
+		"oF": 0
+		},
+	"\/public\/style-class.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/style-class.php",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -112,6 +116,12 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/uninstall.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/uninstall.php",
+		"oF": 0
 		}
 	},
 "hooks": [

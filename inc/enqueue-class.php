@@ -12,8 +12,9 @@ class FES_Enqueue {
 	}
 
 	function enqueue_scripts() {
+		wp_enqueue_script( 'fescookie', plugin_dir_url( __FILE__ ) . 'js/cookie.js', array( 'jquery' ), self::FESVERSION, false );
 		wp_enqueue_script( 'fes', plugin_dir_url( __FILE__ ) . 'js/frontendselector.js', array( 'jquery' ), self::FESVERSION, false );
-		wp_enqueue_script( 'fescookie', plugin_dir_url( __FILE__ ) . 'js/jquery.cookie.js', array( 'jquery' ), self::FESVERSION, false );
+
 	}
 
 }
