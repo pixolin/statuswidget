@@ -2,26 +2,32 @@
 /**
  * Dynamic styling
  */
-if(! class_exists( 'FES_Style' ) ) {
-class FES_Style {
+if ( ! class_exists( 'FES_Style' ) ) {
+	class FES_Style {
 
-	function __construct() {
-		add_action( 'wp_head', array( $this, 'frontend' ) );
-	}
+		function __construct() {
+			add_action( 'wp_head', array( $this, 'frontend' ) );
+		}
 
-	function frontend() {
-		//get colors as predefined in customizer
-		$color = get_option( 'fes-color' );
+		function frontend() {
+			//get colors as predefined in customizer
+			$color = get_option( 'fes-color' );
 
-		$style = '<style type="text/css" name="dolly">
-		.fes-color input  { display: none; }
-		.fes-color label { display: inline-block; width: 20px; height: 20px; border-radius: 50%; 			-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
+			$style = '<style type="text/css" name="dolly">
+		.fes-color input  {
+			display: none;
+		}
+		.fes-color label {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			-webkit-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
 			-moz-box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
 			box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.75);
- }
+ 		}
 		.fes-default {
 			background: transparent;
-			/*border: 2px dotted black;*/
 		}
 		.fes-color-one ' . $color['cssclass'] . ',
 		.fes-one {
@@ -37,7 +43,7 @@ class FES_Style {
 		}
 		</style>';
 
-		echo $style;
+			echo $style;
+		}
 	}
-}
 } // if(! class_exists())

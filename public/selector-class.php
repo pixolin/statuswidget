@@ -2,16 +2,16 @@
 /**
  * Selector
  */
-if(! class_exists( 'FES_Selector' ) ) {
-class FES_Selector {
+if ( ! class_exists( 'FES_Selector' ) ) {
+	class FES_Selector {
 
-	/**
+		/**
 	 * Output of Widget in Frontend
 	 * Uses options set in menu page
 	 * @return string $out
 	 */
-	function display() {
-		$form = '<form class="fes-color">
+		function display() {
+			$form = '<form class="fes-color" aria-hidden="true">
 			     <fieldset>
 			       <input type="radio" id="fes-default" name="fes-color" value="" checked="checked">
 			       <label for="fes-default" class="fes-default"></label>
@@ -23,7 +23,7 @@ class FES_Selector {
 			       	<label for="fes-three" class="fes-three"></label>
 			     </fieldset>
 			     </form>';
-		return $form;
+			return $form;
+		}
 	}
-}
 } // if(! class_exists())

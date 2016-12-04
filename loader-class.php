@@ -26,7 +26,7 @@ if ( ! class_exists( 'FES_Loader' ) ) {
 			include( $this->path . 'inc/enqueue-class.php' );
 			$fes_enqueue = new FES_Enqueue();
 
-			include( $this->path . 'inc/selector-class.php' );
+			include( $this->path . 'public/selector-class.php' );
 
 			include( $this->path . 'public/style-class.php' );
 			$fes_style = new FES_Style();

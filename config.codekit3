@@ -63,12 +63,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/inc\/selector-class.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/selector-class.php",
-		"oF": 0
-		},
 	"\/languages\/fes.pot": {
 		"ft": 8192,
 		"oA": 2,
@@ -85,6 +79,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/loader-class.php",
+		"oF": 0
+		},
+	"\/public\/selector-class.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/public\/selector-class.php",
 		"oF": 0
 		},
 	"\/public\/style-class.php": {
