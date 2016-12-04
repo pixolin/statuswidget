@@ -21,12 +21,6 @@
 		"oAP": "\/admin\/customizer-class.php",
 		"oF": 0
 		},
-	"\/admin\/settings-class.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/admin\/settings-class.php",
-		"oF": 0
-		},
 	"\/admin\/widget-class.php": {
 		"ft": 8192,
 		"oA": 2,
