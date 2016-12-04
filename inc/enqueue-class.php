@@ -2,7 +2,7 @@
 /**
  * Enqueue Scripts and Styles
  */
-
+if(! class_exists( 'FES_Enqueue' ) ) {
 class FES_Enqueue {
 
 	const FESVERSION = '3.145';
@@ -18,3 +18,4 @@ class FES_Enqueue {
 	}
 
 }
+} // if(! class_exists())

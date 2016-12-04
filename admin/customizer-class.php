@@ -3,6 +3,7 @@
  * Customizer Class
  */
 
+if(! class_exists( 'FES_Customizer' ) ) {
 class FES_Customizer {
 
 	function __construct() {
@@ -58,3 +59,4 @@ class FES_Customizer {
 
 	}
 }
+} // if(! class_exists())

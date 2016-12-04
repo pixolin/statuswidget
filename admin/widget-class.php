@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Widget
+ */
+if(! class_exists( 'FES_Widget' ) ) {
 class FES_Widget extends WP_Widget {
 
 	/**
@@ -60,3 +63,4 @@ class FES_Widget extends WP_Widget {
 	}
 
 }
+} // if(! class_exists())

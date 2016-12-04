@@ -2,7 +2,7 @@
 /**
  * Settings
  */
-
+if(! class_exists( 'FES_Settings' ) ) {
 class FES_Settings {
 
 	function __construct() {
@@ -44,3 +44,4 @@ class FES_Settings {
 		return $sanitized;
 	}
 }
+} // if(! class_exists())

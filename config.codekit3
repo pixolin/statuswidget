@@ -45,12 +45,6 @@
 		"oAP": "\/inc\/activation-class.php",
 		"oF": 0
 		},
-	"\/inc\/cookie-class.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/cookie-class.php",
-		"oF": 0
-		},
 	"\/inc\/enqueue-class.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -79,6 +73,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/selector-class.php",
+		"oF": 0
+		},
+	"\/languages\/fes.pot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/languages\/fes.pot",
 		"oF": 0
 		},
 	"\/LICENSE": {

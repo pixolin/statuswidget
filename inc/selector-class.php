@@ -2,7 +2,7 @@
 /**
  * Selector
  */
-
+if(! class_exists( 'FES_Selector' ) ) {
 class FES_Selector {
 
 	/**
@@ -26,4 +26,4 @@ class FES_Selector {
 		return $form;
 	}
 }
-
+} // if(! class_exists())

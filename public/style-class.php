@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * Dynamic styling
+ */
+if(! class_exists( 'FES_Style' ) ) {
 class FES_Style {
 
 	function __construct() {
@@ -34,3 +37,4 @@ class FES_Style {
 		echo $style;
 	}
 }
+} // if(! class_exists())
