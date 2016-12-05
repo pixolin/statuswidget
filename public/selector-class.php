@@ -11,7 +11,7 @@ if ( ! class_exists( 'FES_Selector' ) ) {
 	 * @return string $out
 	 */
 		function display() {
-			$form = '<form class="fes-color" aria-hidden="true">
+			$form = '<form class="fes-color">
 			     <fieldset>
 			       <input type="radio" id="fes-default" name="fes-color" value="" checked="checked">
 			       <label for="fes-default" class="fes-default"></label>
