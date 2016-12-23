@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Status Widget\n"
+"POT-Creation-Date: 2016-12-23 20:45+0100\n"
+"PO-Revision-Date: 2016-12-23 20:47+0100\n"
+"Last-Translator: Pixolin <pixolin@pixolin.de>\n"
+"Language-Team: Pixolin <pixolin@pixolin.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/widget-class.php:14
+msgid "Display a current status for up to four items."
+msgstr "Zeige für bis zu vier Einträge einen aktuellen Status."
+
+#: admin/widget-class.php:62
+msgid "New title"
+msgstr "Neuer Titel"
+
+#: admin/widget-class.php:75
+msgid "Title:"
+msgstr "Titel:"
+
+#: admin/widget-class.php:80
+msgid "Status #1"
+msgstr "Status Nr. 1"
+
+#: admin/widget-class.php:84 admin/widget-class.php:94
+#: admin/widget-class.php:104 admin/widget-class.php:114
+msgid "Status OK?"
+msgstr "Status OK?"
+
+#: admin/widget-class.php:90
+msgid "Status #2"
+msgstr "Status Nr. 2"
+
+#: admin/widget-class.php:100
+msgid "Status #3"
+msgstr "Status Nr. 3"
+
+#: admin/widget-class.php:110
+msgid "Status #4"
+msgstr "Status Nr. 4"
