@@ -2,19 +2,19 @@
 /**
  * Widget
  */
-if ( ! class_exists( 'FES_Widget' ) ) {
-	class FES_Widget extends WP_Widget {
+if ( ! class_exists( 'STW_Widget' ) ) {
+	class STW_Widget extends WP_Widget {
 
 		/**
 	 	* Sets up the widgets name etc
 	 	*/
 		public function __construct() {
 			$widget_ops = array(
-			'classname'   => 'fes-widget',
-			'description' => __( 'Adds buttons to the sidebar to let user select background color.', 'fes' ),
+			'classname'   => 'stw-widget',
+			'description' => __( 'Display a current status for up to four items.', 'stw' ),
 			'customize_selective_refresh' => true,
 			);
-			parent::__construct( 'fes-widget', 'Frontend Selector Widget', $widget_ops );
+			parent::__construct( 'stw-widget', 'Status Widget', $widget_ops );
 		}
 
 		/**
@@ -25,17 +25,15 @@ if ( ! class_exists( 'FES_Widget' ) ) {
 	 */
 		public function widget( $args, $instance ) {
 			// for better a11y, add aria-hidden="true" to widget
-			$before_widget = $args['before_widget'];
-			$before_widget = str_replace( '>', 'aria-hidden="true">', $before_widget );
-			echo $before_widget;
+			echo  $args['before_widget'];
 
 			if ( ! empty( $instance['title'] ) ) {
 				echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 			}
 
 			// the widget content
-			$fes_selector = new FES_Selector();
-			echo $fes_selector->display();
+			$stw_selector = new STW_Selector();
+			echo $stw_selector->display();
 
 			echo $args['after_widget'];
 		}
@@ -47,13 +45,24 @@ if ( ! class_exists( 'FES_Widget' ) ) {
 	 */
 		public function form( $instance ) {
 			$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'New title', 'text_domain' );
+			$status_one = ! empty( $instance['status_one'] ) ? $instance['status_one'] : '';
+
 			?>
 			<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
-		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
-		</p>
-		<?php
-		}
+				<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'text_domain' ); ?></label>
+				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+			</p>
+
+			<p>
+				<label for="<?php echo esc_attr( $this->get_field_id( 'status_one' ) ); ?>"><?php esc_attr_e( 'Status #1', 'text_domain' ); ?>
+				</label>
+				<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'status_one' ) ); ?>" name="<?php echo esc_attr( $this->get_field_id( 'status_one' ) ); ?>" type="text" value="<?php echo esc_attr( $status_one ); ?>">
+				<label for="<?php echo esc_attr( $this->get_field_id( 'mark_one' ) ); ?>"><?php esc_attr_e( 'Status OK?', 'text_domain' ); ?>
+				</label>
+				<input class="checkbox" id="<?php echo esc_attr( $this->get_field_id( 'mark_one' ) ); ?>" name="<?php echo esc_attr( $this->get_field_id( 'mark_one' ) ); ?>" type="checkbox" value="<?php echo esc_attr( $mark_one ); ?>">
+			</p>
+
+			<?php }
 
 		/**
 	 * Processing widget options on save
@@ -64,6 +73,7 @@ if ( ! class_exists( 'FES_Widget' ) ) {
 		public function update( $new_instance, $old_instance ) {
 			$instance = array();
 			$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? strip_tags( $new_instance['title'] ) : '';
+			$instance['status_one'] = ( ! empty( $new_instance['status_one'] ) ) ? strip_tags( $new_instance['status_one'] ) : '';
 
 			return $instance;
 		}
