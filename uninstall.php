@@ -8,7 +8,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	die;
 }
 
-$option_name = 'fes-color';
+$option_name = 'widget_stw_widget';
 
 delete_option( $option_name );
 

@@ -15,5 +15,3 @@ defined( 'ABSPATH' ) or exit;
 
 include( plugin_dir_path( __FILE__ ) . 'loader-class.php' );
 $run = new STW_Loader();
-
-//register_activation_hook( __FILE__, array( 'FES_Activation', 'activation' ) );
